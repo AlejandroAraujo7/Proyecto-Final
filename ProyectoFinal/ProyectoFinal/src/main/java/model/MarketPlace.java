@@ -1,8 +1,11 @@
 package model;
 
+import service.CRUD;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MarketPlace {
+public class MarketPlace implements CRUD<MarketPlace> {
     Administrador administradorMarketPllace;
     ArrayList<Usuario> listUsuarios = new ArrayList<>();
     ArrayList<Vendedor> listVendedores = new ArrayList<>();
@@ -13,5 +16,25 @@ public class MarketPlace {
 
     public void setAdministradorMarketPllace(Administrador administradorMarketPllace) {
         this.administradorMarketPllace = administradorMarketPllace;
+    }
+
+    @Override
+    public void crear(MarketPlace obj) {
+
+    }
+
+    @Override
+    public MarketPlace leer(int id) {
+        return null;
+    }
+
+    @Override
+    public void actualizar(int id, MarketPlace obj) {
+
+    }
+
+    @Override
+    public void eliminar(int id) {
+
     }
 }

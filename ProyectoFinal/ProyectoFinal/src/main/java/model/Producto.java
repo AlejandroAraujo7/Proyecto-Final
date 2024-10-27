@@ -1,8 +1,30 @@
 package model;
 
+import service.CRUD;
+
 import javax.swing.*;
 
-public class Producto {
+public class Producto implements CRUD<Producto> {
+    @Override
+    public void crear(Producto obj) {
+
+    }
+
+    @Override
+    public Producto leer(int id) {
+        return null;
+    }
+
+    @Override
+    public void actualizar(int id, Producto obj) {
+
+    }
+
+    @Override
+    public void eliminar(int id) {
+
+    }
+
     private String nombre;
     private ImageIcon imagen;
     private String categoria;
@@ -15,4 +37,35 @@ public class Producto {
         this.precio = precio;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public ImageIcon getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(ImageIcon imagen) {
+        this.imagen = imagen;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(float precio) {
+        this.precio = precio;
+    }
 }

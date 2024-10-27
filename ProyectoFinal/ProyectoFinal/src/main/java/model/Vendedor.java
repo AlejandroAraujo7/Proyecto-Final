@@ -1,8 +1,11 @@
 package model;
 
+import service.CRUD;
+
 import java.util.ArrayList;
 
-public class Vendedor extends Persona {
+public class Vendedor extends Persona implements CRUD<Persona> {
+
 
     ArrayList<Vendedor> vendedoresAliados = new ArrayList<>();
     Muro muroVendedor;
@@ -37,5 +40,23 @@ public class Vendedor extends Persona {
         this.listProductos = listProductos;
     }
 
+    @Override
+    public void crear(Persona obj) {
 
+    }
+
+    @Override
+    public Persona leer(int id) {
+        return null;
+    }
+
+    @Override
+    public void actualizar(int id, Persona obj) {
+
+    }
+
+    @Override
+    public void eliminar(int id) {
+
+    }
 }

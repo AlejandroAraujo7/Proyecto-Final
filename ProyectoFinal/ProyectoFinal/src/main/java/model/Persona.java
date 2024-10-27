@@ -1,6 +1,8 @@
 package model;
 
-public abstract class Persona {
+import service.CRUD;
+
+public abstract class Persona  {
     private String nombre;
     private String apellidos;
     private String cedula;
@@ -44,6 +46,5 @@ public abstract class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-
 
 }
