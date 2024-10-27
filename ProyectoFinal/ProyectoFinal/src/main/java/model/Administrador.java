@@ -19,6 +19,9 @@ public class Administrador extends Persona implements CRUD<Administrador> {
 
     }
 
+
+    
+
     @Override
     public void eliminar(int id) {
 
