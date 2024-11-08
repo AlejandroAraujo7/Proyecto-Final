@@ -14,4 +14,7 @@ module co.edu.uniquindio.poo.proyectofinal.proyectofinal {
 
     opens co.edu.uniquindio.poo.proyectofinal.proyectofinal to javafx.fxml;
     exports co.edu.uniquindio.poo.proyectofinal.proyectofinal;
+
+    opens co.edu.uniquindio.poo.proyectofinal.proyectofinal.viewcontroller;
+    exports co.edu.uniquindio.poo.proyectofinal.proyectofinal.viewcontroller;
 }
