@@ -83,4 +83,19 @@ public class Usuario implements CRUDUsuario {
     public List<Usuario> getAllUsuario() {
         return usuarios;
     }
+
+    @Override
+    public void createUsuario(String username, String password) {
+
+    }
+
+    @Override
+    public void updateUsuario(String username, String newPassword) {
+
+    }
+
+    @Override
+    public void viewUsuario(String username) {
+
+    }
 }

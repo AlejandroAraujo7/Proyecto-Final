@@ -10,4 +10,10 @@ public interface CRUDUsuario {
     boolean updateUsuario(Usuario usuario);
     boolean deleteUsuario(String cedula);
     List<Usuario> getAllUsuario();
+
+    void createUsuario(String username, String password);
+
+    void updateUsuario(String username, String newPassword);
+
+    void viewUsuario(String username);
 }

@@ -73,6 +73,11 @@ public class Vendedor extends Usuario implements CRUDVendedor {
     }
 
     @Override
+    public void createVendedor(String sellerName, String password) {
+
+    }
+
+    @Override
     public String getRol() {
         return "Vendedor";
     }

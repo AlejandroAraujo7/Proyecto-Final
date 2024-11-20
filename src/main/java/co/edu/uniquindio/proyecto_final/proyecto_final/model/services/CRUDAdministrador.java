@@ -14,4 +14,6 @@ public interface CRUDAdministrador {
     boolean delete(String cedula);
 
     List<Administrador> getAllAdministrador();
+
+    void createAdministrador(String adminName, String password);
 }

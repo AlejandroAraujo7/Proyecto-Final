@@ -27,6 +27,10 @@ public class Producto implements CRUDProducto {
         this.fechaPublicacion = fechaPublicacion;
     }
 
+    public Producto() {
+
+    }
+
     // Getters y Setters
 
     public static List<Producto> getProductos() {
@@ -123,6 +127,11 @@ public class Producto implements CRUDProducto {
     @Override
     public List<Producto> getByEstado(String estado) {
         return productos.stream().filter(p -> p.getEstado().name().equalsIgnoreCase(estado)).toList();
+    }
+
+    @Override
+    public String getDescripcion() {
+        return "";
     }
 
 }

@@ -46,6 +46,11 @@ public class Administrador extends Usuario implements CRUDAdministrador{
     }
 
     @Override
+    public void createAdministrador(String adminName, String password) {
+
+    }
+
+    @Override
     public String getRol() {
         return "Administrador";
     }

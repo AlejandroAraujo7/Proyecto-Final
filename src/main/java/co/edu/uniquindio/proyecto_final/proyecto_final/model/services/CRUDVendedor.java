@@ -12,4 +12,6 @@ public interface CRUDVendedor {
     List<Vendedor> getAllVendedor();
     boolean addAliado(String cedulaVendedor, Vendedor aliado);
     boolean removeAliado(String cedulaVendedor, Vendedor aliado);
+
+    void createVendedor(String sellerName, String password);
 }

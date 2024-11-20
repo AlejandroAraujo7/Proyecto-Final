@@ -11,4 +11,6 @@ public interface CRUDProducto {
     boolean delete(int id);
     List<Producto> getAllProductos();
     List<Producto> getByEstado(String estado);
+
+    String getDescripcion();
 }
